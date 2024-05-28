@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13</title>
+</head>
+
+<body>
+
+    <h1 id="a"></h1>
+
+    <script>
+
+        let para = "I often take a walk with my <mark>dog</mark> in the evening. His <mark>dog</mark> follows him everywhere. I don't feed my <mark>dog</mark> in the morning";
+
+        document.getElementById('a').innerHTML+=(`Original : <u>${para}</u></br></br>`);
+
+        let output = para.replace(/dog/g, "<mark>cat</mark>");
+
+        document.getElementById('a').innerHTML+=(`Replace output is : <u>${output}</u></br>`);
+
+
+    </script>
+</body>
+
+</html>

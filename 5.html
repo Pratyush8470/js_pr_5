@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+
+<body>
+
+    <h1 id="a"></h1>
+
+    <script>
+
+        let remove = (array) => {
+            return array.filter(element => element >= 0);
+        };
+
+        let array = [-23, -20, -17, -12, -5, 0, 1, 5, 12, 19, 20];
+
+        document.getElementById('a').innerHTML += (`Array with negative values: ${array}</br></br>`);
+
+        let positive = remove(array);
+
+        document.getElementById('a').innerHTML += (`Array without negative values: ${positive}`);
+
+    </script>
+</body>
+
+</html>

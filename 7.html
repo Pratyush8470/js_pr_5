@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7</title>
+</head>
+
+<body>
+
+    <h1 id="a"></h1>
+
+    <script>
+        let array = [23, 20, 17, 12, 5, 0, 1, 5, 12, 19, 20];
+
+        document.getElementById('a').innerHTML+=(`Current order: ${array}</br>`);
+
+        let ascending = [...array].sort((a, b) => a - b);
+
+        let descending = [...array].sort((a, b) => b - a);
+
+        document.getElementById('a').innerHTML+=(`Array in ascending order: ${ascending}</br>`);
+        document.getElementById('a').innerHTML+=(`Array in descending order: ${descending}</br>`);
+
+
+    </script>
+</body>
+
+</html>

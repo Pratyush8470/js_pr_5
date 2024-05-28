@@ -12,9 +12,9 @@
     <h1 id="a"></h1>
 
     <script>
-        const max = (array) => {
+        let Max = (array) => {
             if (array.length === 0) {
-                throw new Error("Array is empty");
+               console.log("Array is empty");
             }
             let max = array[0];
             for (let i = 1; i < array.length; i++) {
@@ -24,6 +24,28 @@
             }
             return max;
         };
+        let Min = (array) => {
+            if (array.length === 0) {
+                console.log("Array is empty");
+            }
+            let min = array[0];
+            for (let i = 1; i < array.length; i++) {
+                if (array[i] < min) {
+                    min = array[i];
+                }
+            }
+            return min;
+        };
+
+        let array = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
+
+        document.getElementById('a').innerHTML+=(`${array}</br>`);
+
+        let max = Max(array);
+        document.getElementById('a').innerHTML+=(`Maximum value is : ${max}</br>`);
+
+        let min = Min(array);
+        document.getElementById('a').innerHTML+=(`Minimum value is : ${min}</br>`);
     </script>
 </body>
 

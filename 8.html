@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8</title>
+</head>
+
+<body>
+
+    <h1 id="a"></h1>
+
+    <script>
+
+        let array = ["JavaScript", "HTML", "CSS", "ReactJS", "Node", "Express", "Angularjs", "Vue"];
+
+        document.getElementById('a').innerHTML+=(`String is : ${array}</br></br>`);
+
+        let Strings = array.filter(str => str.length >= 8);
+
+        document.getElementById('a').innerHTML+=(`Filtered strings 8 characters or more character : ${Strings}`);
+
+    </script>
+</body>
+
+</html>

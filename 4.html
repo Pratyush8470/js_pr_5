@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3</title>
+    <title>4
+
+    </title>
 </head>
 
 <body>
@@ -12,9 +14,16 @@
     <h1 id="a"></h1>
 
     <script>
-        const max = (array) => {
-            
+        let ASCII = (array) => {
+            return array.map(element => element.charCodeAt(0));
         };
+
+        let array = ['A', 'b', 'C', 'd', 'E'];
+
+        let ascii = ASCII(array);
+
+        document.getElementById('a').innerHTML+=(`ascii values of : (${array}) is :( ${ascii})`);
+
     </script>
 </body>
 
