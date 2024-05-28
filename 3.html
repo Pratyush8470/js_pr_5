@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+
+<body>
+
+    <h1 id="a"></h1>
+
+    <script>
+        const max = (array) => {
+            if (array.length === 0) {
+                throw new Error("Array is empty");
+            }
+            let max = array[0];
+            for (let i = 1; i < array.length; i++) {
+                if (array[i] > max) {
+                    max = array[i];
+                }
+            }
+            return max;
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+
+<body>
+
+    <h1 id="a"></h1>
+
+    <script>
+        let array = [1, 2, 3, 4, 5];
+        let sum=0;
+
+        for (let i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        document.getElementById('a').innerHTML+=(`sum of ${array} in for loop is ${sum}</br></br>`);
+
+
+        let sum2=0;
+        array.forEach(number => {
+            sum2+=number;
+        });
+        document.getElementById('a').innerHTML+=(`sum of ${array} in foreach loop is ${sum2}`);
+    </script>
+</body>
+
+</html>
